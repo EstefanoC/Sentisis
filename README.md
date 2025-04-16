@@ -1,70 +1,92 @@
-# Create the React App
+# Test by EstefanoC
 
-First I run ### `npx react-start-app`
+![](https://i.ibb.co/txgpz0s/Logo-Ec.png)
 
-## Available Scripts
+[Portafolio | Portfolio](https://estefanoc.github.io/EstefanoC "Portfolio Link")
 
-In the project directory, you can run:
+## Steps for the challenge
 
-### `npm start`
+First I read slow the .md to accomplish the challenge in the best way
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Then I run ### `npx react-start-app`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+And I decide use the MaterialUI with Redux, React and Typescript
 
-### `npm test`
+Then I run `npm install @types/react`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+and all dependencies of MUI and Redux.
 
-### `npm run build`
+First I create the table and after the function of all components, due to time constraints, I decided to keep it simple and keep the component separation simple, without many folders. I also kept the MUI theme configuration simple. I proceeded to save the data in an array and started with the logic as I understood it. Once I completed the tasks, I decided to create the tests with JEST. For the final step, I decided to upload everything to Github along with Github Pages.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Important Routes
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+/
+├── public/
+│ └── favicon.svg
+├── src/
+│ ├── components/
+│ │ ├── Common
+│ │ ├── Table
+│ │ ├── UI
+│ │ └── Modal
+│ ├── store
+│ ├── styles
+│ ├── types
+│ └── utils
+├── package.json
+├── App.js
+└── index.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Install and configuration
 
-### `npm run eject`
+- Steps for install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**In the root of project**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Just run to install all dependencies ( test with v20.11.1 Node )
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+  npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+&nbsp;
 
-## Learn More
+- Steps for configure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+With all dependencies installed, to development environment:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+  npm run start
+```
 
-### Code Splitting
+&nbsp;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Steps for Test
 
-### Analyzing the Bundle Size
+To run test with jest:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+  npm run test
+```
 
-### Making a Progressive Web App
+## Production
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Steps for Github
 
-### Advanced Configuration
+**In the root of project**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+  npm run build
 
-### Deployment
+  npm run deploy
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Tech Stack
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
+- [Javascript](https://developer.mozilla.org/es/docs/Web/JavaScript)
+- [Typescript](https://www.typescriptlang.org/docs/)
+- [React](https://react.dev/)
+- [MaterialUI](https://mui.com/material-ui/)
+- [Redux](https://redux.js.org/)
