@@ -1,6 +1,4 @@
-# Test by EstefanoC
-
-![](https://i.ibb.co/txgpz0s/Logo-Ec.png)
+# Frontend Sentisis Challenge by EstefanoC
 
 [Portafolio | Portfolio](https://estefanoc.github.io/EstefanoC "Portfolio Link")
 
