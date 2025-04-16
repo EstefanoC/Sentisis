@@ -1,6 +1,8 @@
 # Frontend Sentisis Challenge by EstefanoC
 
-[Portafolio | Portfolio](https://estefanoc.github.io/EstefanoC "Portfolio Link")
+[Portfolio](https://estefanoc.github.io/EstefanoC "Portfolio Link")
+
+[Demo live of this code](https://estefanoc.github.io/Sentisis "Demo")
 
 ## Steps for the challenge
 
@@ -18,6 +20,7 @@ First I create the table and after the function of all components, due to time c
 
 ### Important Routes
 
+```text
 /
 ├── public/
 │ └── favicon.svg
@@ -34,6 +37,7 @@ First I create the table and after the function of all components, due to time c
 ├── package.json
 ├── App.js
 └── index.js
+```
 
 ## Install and configuration
 

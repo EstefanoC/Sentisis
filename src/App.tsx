@@ -1,7 +1,7 @@
 import React from "react";
 
 // Mui
-import { Box, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 
 // Components
 import TableComponent from "./components/Table/index.tsx";
@@ -12,11 +12,8 @@ import "./styles/normalize.css";
 
 function App() {
   return (
-    <Box
+    <Container
       sx={{
-        margin: "auto",
-        maxWidth: "1280px",
-        minHeight: "100vh",
         display: "flex",
         gap: 4,
         flexDirection: "column",
@@ -26,7 +23,7 @@ function App() {
       <Box
         component="header"
         sx={{
-          gap: 2,
+          gap: { xs: 0.8, sm: 2 },
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
@@ -37,10 +34,24 @@ function App() {
           color: (theme) => theme.palette.background.paper, // primary accent color
         }}
       >
-        <Typography variant="h3" component="h1" sx={{ fontWeight: "bold" }}>
+        <Typography
+          variant="h3"
+          component="h1"
+          sx={{
+            fontWeight: "bold",
+            fontSize: { xs: "1.5rem", md: "3rem" },
+          }}
+        >
           Estefano Chacón
         </Typography>
-        <Typography variant="h6" component="h2" sx={{ fontWeight: "medium" }}>
+        <Typography
+          variant="h6"
+          component="h2"
+          sx={{
+            fontWeight: "medium",
+            fontSize: { xs: "0.8rem", md: "1.25rem" },
+          }}
+        >
           Prueba Sentisis
         </Typography>
       </Box>
@@ -60,7 +71,7 @@ function App() {
       >
         <TableComponent />
       </Box>
-    </Box>
+    </Container>
   );
 }
 

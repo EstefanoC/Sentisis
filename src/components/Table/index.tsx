@@ -112,81 +112,82 @@ const TableComponent = () => {
   return (
     <>
       {/* Container */}
-      <Stack
-        direction="column"
-        gap={3}
-        width="100%"
-        sx={{ borderRadius: 2, overflow: "hidden" }}
-      >
+      <Stack direction="column" gap={3} width="100%" sx={{ borderRadius: 2 }}>
         {/* Table */}
-        <TableContainer
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <Table>
-            {/* Columns */}
-            <TableHead
-              sx={{
-                color: (theme) => theme.palette.common.black,
-                backgroundColor: (theme) => theme.palette.primary.main,
-              }}
-            >
-              <TableRow>
-                {columns.map((column) => (
-                  <TableCell
-                    key={column}
-                    onClick={() => handleSortRequest(column)}
-                    sx={{
-                      cursor: column === "Release date" ? "pointer" : "default",
-                    }}
-                  >
-                    <Typography
-                      variant="body1"
+        <Stack sx={{ width: "100%", overflow: "auto" }}>
+          <TableContainer
+            sx={{
+              display: "flex",
+              minWidth: "720px",
+              borderRadius: 2,
+              overflow: "hidden",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <Table sx={{ minWidth: "720px" }}>
+              {/* Columns */}
+              <TableHead
+                sx={{
+                  color: (theme) => theme.palette.common.black,
+                  backgroundColor: (theme) => theme.palette.primary.main,
+                }}
+              >
+                <TableRow>
+                  {columns.map((column) => (
+                    <TableCell
+                      key={column}
+                      onClick={() => handleSortRequest(column)}
                       sx={{
-                        fontWeight: "bold",
-                        display: "flex",
-                        alignItems: "center",
+                        cursor:
+                          column === "Release date" ? "pointer" : "default",
                       }}
                     >
-                      {column === "Release date" ? (
-                        <TableSortLabel
-                          active={orderBy === column}
-                          direction={
-                            orderBy === column ? orderDirection : "asc"
-                          }
-                        >
-                          {column}
-                        </TableSortLabel>
-                      ) : (
-                        column
-                      )}
-                    </Typography>
-                  </TableCell>
-                ))}
-              </TableRow>
-            </TableHead>
-
-            {/* Data of Table */}
-            <TableBody
-              sx={{
-                color: "#fff",
-                backgroundColor: (theme) => theme.palette.background.paper,
-                "& > tr:nth-of-type(even)": {
-                  backgroundColor: (theme) => theme.palette.grey.A100,
-                },
-              }}
-            >
-              {sortedData.map((row) => (
-                <TableRow key={row.id}>
-                  <TableContentLoop Data={row} onClick={handleRowClick} />
+                      <Typography
+                        variant="body1"
+                        sx={{
+                          fontWeight: "bold",
+                          display: "flex",
+                          alignItems: "center",
+                        }}
+                      >
+                        {column === "Release date" ? (
+                          <TableSortLabel
+                            active={orderBy === column}
+                            direction={
+                              orderBy === column ? orderDirection : "asc"
+                            }
+                          >
+                            {column}
+                          </TableSortLabel>
+                        ) : (
+                          column
+                        )}
+                      </Typography>
+                    </TableCell>
+                  ))}
                 </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
+              </TableHead>
+
+              {/* Data of Table */}
+              <TableBody
+                sx={{
+                  color: "#fff",
+                  backgroundColor: (theme) => theme.palette.background.paper,
+                  "& > tr:nth-of-type(even)": {
+                    backgroundColor: (theme) => theme.palette.grey.A100,
+                  },
+                }}
+              >
+                {sortedData.map((row) => (
+                  <TableRow key={row.id}>
+                    <TableContentLoop Data={row} onClick={handleRowClick} />
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </TableContainer>
+        </Stack>
 
         {/* Cart Button */}
         {hasCartItems && (
