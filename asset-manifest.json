@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Sentisis/static/css/main.0ee15884.css",
-    "main.js": "/Sentisis/static/js/main.9b022d41.js",
+    "main.js": "/Sentisis/static/js/main.50bd9a21.js",
     "static/js/453.2f7ed327.chunk.js": "/Sentisis/static/js/453.2f7ed327.chunk.js",
     "index.html": "/Sentisis/index.html",
     "main.0ee15884.css.map": "/Sentisis/static/css/main.0ee15884.css.map",
-    "main.9b022d41.js.map": "/Sentisis/static/js/main.9b022d41.js.map",
+    "main.50bd9a21.js.map": "/Sentisis/static/js/main.50bd9a21.js.map",
     "453.2f7ed327.chunk.js.map": "/Sentisis/static/js/453.2f7ed327.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0ee15884.css",
-    "static/js/main.9b022d41.js"
+    "static/js/main.50bd9a21.js"
   ]
 }
