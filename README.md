@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Create the React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+First I run ### `npx react-start-app`
 
 ## Available Scripts
 
