@@ -3,7 +3,7 @@
   "description": "EstefanoC Estefano Chacon",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://EstefanoC.github.io/sintesis",
+  "homepage": "http://EstefanoC.github.io/Sentisis",
   "dependencies": {
     "@base-ui-components/react": "^1.0.0-alpha.7",
     "@emotion/react": "^11.14.0",
